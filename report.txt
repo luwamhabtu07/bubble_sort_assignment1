@@ -1,0 +1,37 @@
+Title: Bubble Sort Implementation and Analysis
+
+Introduction
+
+Overview of Bubble Sort
+Goals of this assignment
+Basic vs. Optimized Implementation
+
+Description of both versions
+Key differences in logic
+Test Case Summary
+
+Test Case	Input	Basic Output	Optimized Output	Observations
+Random Array	[5,3,8,4,2]	[2,3,4,5,8]	[2,3,4,5,8]	Works as expected
+Already Sorted	[1,2,3,4,5]	[1,2,3,4,5]	[1,2,3,4,5]	Optimized stops early
+Reverse Sorted	[5,4,3,2,1]	[1,2,3,4,5]	[1,2,3,4,5]	Worst case scenario
+All Identical	[7,7,7,7,7]	[7,7,7,7,7]	[7,7,7,7,7]	No swaps needed
+Empty Array	[]	[]	[]	Handled correctly
+Single Element	[42]	[42]	[42]	Handled correctly
+Time Complexity
+
+Worst Case: O(n²) → reverse sorted
+Best Case (optimized): O(n) → already sorted
+Average Case: O(n²)
+Space Complexity
+
+O(1): In-place sorting
+Stability
+
+Bubble Sort is stable (maintains relative order of equal elements)
+Optimization Observation
+
+Optimized version performs fewer passes in best-case scenarios, improving performance.
+Conclusion
+
+Reinforced understanding of sorting mechanics
+Optimization provides measurable benefits for pre-sorted or nearly sorted arrays
